@@ -3,16 +3,27 @@
 
 // Growth with respect to input - lineraly expandingws
 
-function sumCharCodes(n: string): number {
-    let sum = 0
-    for (let i = 0; i < n.length; i++) {
-        sum += n.charCodeAt(i)
-    }
-    return sum
-}
+// function sumCharCodes(n: string): number {
+//     let sum = 0
+//     for (let i = 0; i < n.length; i++) {
+//         sum += n.charCodeAt(i)
+//     }
+//     return sum
+// }
 
 // for every "unit" of string, there is another "loop" that must be completed
 // simple trick for looking for complexity - look for loops
 // constants are dropped
 // worset case is usually the way we measure
 
+// O(N^2)
+
+// function sumCharCodes(n: string): number {
+//     let sum = 0
+//     for (let i = 0; i < n.length; i++) {
+//         for (let j = 0; j < n.length; j++) {
+//             sum += charCode
+//         }
+//     }
+//     return sum
+// }
